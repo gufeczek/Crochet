@@ -1,4 +1,4 @@
-package io.github.gufeczek.data
+package io.github.gufeczek.crochet.data
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow

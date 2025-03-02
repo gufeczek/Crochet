@@ -1,4 +1,4 @@
-package io.github.gufeczek.data
+package io.github.gufeczek.crochet.data
 
 import org.koin.core.annotation.ComponentScan
 import org.koin.core.annotation.Module
