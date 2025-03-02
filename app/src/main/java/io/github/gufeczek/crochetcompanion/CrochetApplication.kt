@@ -4,7 +4,7 @@ import android.app.Application
 import io.github.gufeczek.feature.counter.FeatureModule
 import io.github.gufeczek.core.speech.SpeechModule
 import io.github.gufeczek.data.DataModule
-import io.github.gufeczek.speechprovider.SpeechProviderModule
+import io.github.gufeczek.crochet.speechprovider.SpeechProviderModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin

@@ -1,7 +1,7 @@
 package io.github.gufeczek.core.speech
 
 import io.github.gufeczek.model.SpeechEvent
-import io.github.gufeczek.speechprovider.DefaultSpeechProvider
+import io.github.gufeczek.crochet.speechprovider.DefaultSpeechProvider
 import kotlinx.coroutines.flow.Flow
 import org.koin.core.annotation.Single
 

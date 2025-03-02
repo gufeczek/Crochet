@@ -1,4 +1,4 @@
-package io.github.gufeczek.speechprovider
+package io.github.gufeczek.crochet.speechprovider
 
 import android.app.AppOpsManager
 import android.app.Notification
