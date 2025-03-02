@@ -1,4 +1,4 @@
-package io.github.gufeczek.feature.counter.design
+package io.github.gufeczek.crochet.design.system
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.PaddingValues

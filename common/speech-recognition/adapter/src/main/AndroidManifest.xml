@@ -9,7 +9,7 @@
         android:allowBackup="true"
         android:supportsRtl="true">
         <service
-            android:name="io.github.gufeczek.crochet.speechprovider.SpeechProviderService"
+            android:name="io.github.gufeczek.crochet.speech.recogniton.adapter.SpeechProviderService"
             android:foregroundServiceType="microphone"
             android:exported="true">
             <intent-filter>

@@ -1,11 +1,10 @@
 package io.github.gufeczek.crochet
 
 import android.app.Application
-import io.github.gufeczek.crochet.AppModule
 import io.github.gufeczek.feature.counter.FeatureModule
 import io.github.gufeczek.crochet.core.speech.SpeechModule
 import io.github.gufeczek.crochet.data.DataModule
-import io.github.gufeczek.crochet.speechprovider.SpeechProviderModule
+import io.github.gufeczek.crochet.speech.recogniton.adapter.SpeechProviderModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin

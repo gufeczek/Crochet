@@ -13,7 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.vectorResource
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import io.github.gufeczek.feature.counter.design.Button
+import io.github.gufeczek.crochet.design.system.Button
 import io.github.gufeczek.feature.counter.R
 import org.koin.compose.viewmodel.koinViewModel
 
