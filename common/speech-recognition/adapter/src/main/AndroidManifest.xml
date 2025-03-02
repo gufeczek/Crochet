@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CrochetCompanion" >
         <service
-            android:name="io.github.gufeczek.speechprovider.SpeechProviderService"
+            android:name="io.github.gufeczek.crochet.speechprovider.SpeechProviderService"
             android:foregroundServiceType="microphone"
             android:exported="true">
             <intent-filter>
