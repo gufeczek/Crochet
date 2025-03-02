@@ -1,5 +1,6 @@
 import com.android.build.api.dsl.LibraryExtension
 import io.github.gufeczek.crochet.convention.dependency.configureAndroidCore
+import io.github.gufeczek.crochet.convention.dependency.configureJUnit
 import io.github.gufeczek.crochet.convention.dependency.configureKoin
 import io.github.gufeczek.crochet.convention.plugin.ANDROID_LIBRARY
 import io.github.gufeczek.crochet.convention.plugin.KOTLIN_ANDROID
@@ -30,6 +31,10 @@ class CommonLibraryPlugin : Plugin<Project> {
             dependencies {
                 configureAndroidCore(project)
                 configureKoin(project)
+                configureJUnit(project)
+            }
+            lint {
+                disable.add("FlowOperatorInvokedInComposition")
             }
         }
     }

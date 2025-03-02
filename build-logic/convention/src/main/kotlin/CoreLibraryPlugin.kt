@@ -1,4 +1,5 @@
 import com.android.build.api.dsl.LibraryExtension
+import io.github.gufeczek.crochet.convention.dependency.configureAndroidCore
 import io.github.gufeczek.crochet.convention.dependency.configureArrow
 import io.github.gufeczek.crochet.convention.dependency.configureJUnit
 import io.github.gufeczek.crochet.convention.dependency.configureKoin
@@ -28,6 +29,9 @@ class CoreLibraryPlugin : Plugin<Project> {
                 configureKoin(project)
                 configureArrow(project)
                 configureJUnit(project)
+            }
+            lint {
+                disable.add("FlowOperatorInvokedInComposition")
             }
         }
     }
