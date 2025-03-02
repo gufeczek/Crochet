@@ -9,16 +9,16 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import io.github.gufeczek.crochet.ui.CrochetApp
 import io.github.gufeczek.crochet.ui.rememberCrochetAppState
-import io.github.gufeczek.crochet.ui.theme.CrochetCompanionTheme
+import io.github.gufeczek.crochet.ui.theme.CrochetTheme
 
 const val PERMISSIONS_REQUEST_RECORD_AUDIO = 1
 class MainActivity : ComponentActivity() {
-    //private val speechManager: SpeechManager by inject()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         enableEdgeToEdge()
+
+        // TODO: move this to :common:speech-recogniton:adapter
         val permissionCheck =
             ContextCompat.checkSelfPermission(applicationContext, android.Manifest.permission.RECORD_AUDIO)
         if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
@@ -28,11 +28,11 @@ class MainActivity : ComponentActivity() {
                 PERMISSIONS_REQUEST_RECORD_AUDIO
             )
         }
-        //speechManager.initialize()
+
         setContent {
             val appState = rememberCrochetAppState()
 
-            CrochetCompanionTheme {
+            CrochetTheme {
                 CrochetApp(appState)
             }
         }

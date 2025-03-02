@@ -1,4 +1,4 @@
-package io.github.gufeczek.crochet.speechprovider
+package io.github.gufeczek.crochet.speech.recogniton.adapter
 
 import android.content.Context
 import io.github.gufeczek.crochet.model.SpeechEvent

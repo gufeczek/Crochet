@@ -1,4 +1,4 @@
-package io.github.gufeczek.crochet.speechprovider
+package io.github.gufeczek.crochet.speech.recogniton.adapter
 
 import android.app.AppOpsManager
 import android.app.Notification
@@ -11,7 +11,6 @@ import android.os.Binder
 import android.os.IBinder
 import android.speech.tts.TextToSpeech
 import androidx.core.content.getSystemService
-import io.github.gufeczek.common.speech.recognition.adapter.R
 import io.github.gufeczek.crochet.model.SpeechEvent
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -49,10 +48,7 @@ internal class SpeechProviderService: Service(), TextToSpeech.OnInitListener {
         GlobalScope.launch(Dispatchers.Default) {
             val model = initializeSpeechRecognitionModel(this@SpeechProviderService, LogLevel.DEBUG)
             launch(Dispatchers.Main) {
-                initRecognitionListener(model!!).flowOn(Dispatchers.IO).collect {
-                    print(it)
-                    _speechEvents.emit(it)
-                }
+                initRecognitionListener(model!!).flowOn(Dispatchers.IO).collect(_speechEvents::emit)
             }
         }
 
@@ -79,7 +75,6 @@ internal class SpeechProviderService: Service(), TextToSpeech.OnInitListener {
         return Notification.Builder(this, CHANNEL_ID)
             .setContentTitle("My Service")
             .setContentText("Running in the foreground")
-            .setSmallIcon(R.drawable.ic_launcher_background)
             .build()
     }
 

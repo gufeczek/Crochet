@@ -1,4 +1,4 @@
-package io.github.gufeczek.crochet.speechprovider
+package io.github.gufeczek.crochet.speech.recogniton.adapter
 
 import android.content.ComponentName
 import android.content.Context
@@ -15,12 +15,10 @@ import kotlinx.coroutines.launch
 import org.koin.core.annotation.Single
 
 @Single
-class DefaultSpeechProvider(private val appContext: Context) {
+class SpeechAdapter(private val appContext: Context) {
     private var boundService: SpeechProviderService? = null
     private val _speechEvents = MutableStateFlow<SpeechEvent>(value = SpeechEvent.Finished)
-    val speechEvents: Flow<SpeechEvent> = _speechEvents.asStateFlow().also { GlobalScope.launch { it.collect {
-        print(it)
-    }  }}
+    val speechEvents: Flow<SpeechEvent> = _speechEvents.asStateFlow()
 
     fun initialize(): Boolean {
         val connection = object : ServiceConnection {

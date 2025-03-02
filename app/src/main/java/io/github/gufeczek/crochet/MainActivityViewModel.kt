@@ -8,6 +8,5 @@ sealed interface MainActivityViewState {
 }
 
 @KoinViewModel
-class MainActivityViewModel : ViewModel() {
-}
+class MainActivityViewModel : ViewModel()
 

@@ -1,7 +1,7 @@
 package io.github.gufeczek.crochet.core.speech
 
 import io.github.gufeczek.crochet.model.SpeechEvent
-import io.github.gufeczek.crochet.speechprovider.DefaultSpeechProvider
+import io.github.gufeczek.crochet.speech.recogniton.adapter.SpeechAdapter
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flatMapConcat
 import kotlinx.coroutines.flow.flow
@@ -14,7 +14,7 @@ const val WINDOW_SIZE = 3
 
 @OptIn(ExperimentalCoroutinesApi::class)
 @Single
-class VoiceRecognitionMonitor(speechProvider: DefaultSpeechProvider) {
+class VoiceRecognitionMonitor(speechProvider: SpeechAdapter) {
     val isActive = speechProvider.speechEvents
         .flatMapConcat {
             when (it) {

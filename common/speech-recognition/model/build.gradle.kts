@@ -12,7 +12,7 @@ android {
 }
 
 dependencies {
-    implementation(libs.vosk)
+    api(libs.vosk) // TODO: move to convention plugin
 }
 
 tasks.register("genUUID") {
