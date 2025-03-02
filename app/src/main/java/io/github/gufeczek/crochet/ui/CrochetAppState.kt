@@ -1,4 +1,4 @@
-package io.github.gufeczek.crochetcompanion.ui
+package io.github.gufeczek.crochet.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -6,7 +6,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.navigation.NavDestination
 import androidx.navigation.NavHostController
-import io.github.gufeczek.crochetcompanion.navigation.TopLevelDestination
+import io.github.gufeczek.crochet.navigation.TopLevelDestination
 import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.rememberNavController

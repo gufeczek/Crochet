@@ -1,4 +1,4 @@
-package io.github.gufeczek.crochetcompanion.ui.theme
+package io.github.gufeczek.crochet.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

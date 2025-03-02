@@ -1,4 +1,4 @@
-package io.github.gufeczek.crochetcompanion.navigation
+package io.github.gufeczek.crochet.navigation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Build

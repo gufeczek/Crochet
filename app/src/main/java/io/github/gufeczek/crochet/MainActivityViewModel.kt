@@ -1,4 +1,4 @@
-package io.github.gufeczek.crochetcompanion
+package io.github.gufeczek.crochet
 
 import androidx.lifecycle.ViewModel
 import org.koin.android.annotation.KoinViewModel

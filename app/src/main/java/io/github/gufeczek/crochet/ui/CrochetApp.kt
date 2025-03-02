@@ -1,4 +1,4 @@
-package io.github.gufeczek.crochetcompanion.ui
+package io.github.gufeczek.crochet.ui
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
@@ -12,7 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import io.github.gufeczek.crochetcompanion.navigation.CrochetNavHost
+import io.github.gufeczek.crochet.navigation.CrochetNavHost
 
 @Composable
 fun CrochetApp(

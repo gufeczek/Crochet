@@ -1,10 +1,10 @@
-package io.github.gufeczek.crochetcompanion.navigation
+package io.github.gufeczek.crochet.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import io.github.gufeczek.feature.counter.nav.CounterRoute
-import io.github.gufeczek.crochetcompanion.ui.CrochetAppState
+import io.github.gufeczek.crochet.ui.CrochetAppState
 import io.github.gufeczek.feature.counter.nav.counterScreen
 
 @Composable

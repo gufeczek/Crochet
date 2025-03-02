@@ -1,6 +1,7 @@
-package io.github.gufeczek.crochetcompanion
+package io.github.gufeczek.crochet
 
 import android.app.Application
+import io.github.gufeczek.crochet.AppModule
 import io.github.gufeczek.feature.counter.FeatureModule
 import io.github.gufeczek.crochet.core.speech.SpeechModule
 import io.github.gufeczek.crochet.data.DataModule

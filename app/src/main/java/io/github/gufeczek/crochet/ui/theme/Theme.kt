@@ -1,6 +1,5 @@
-package io.github.gufeczek.crochetcompanion.ui.theme
+package io.github.gufeczek.crochet.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

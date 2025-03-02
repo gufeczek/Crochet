@@ -1,4 +1,4 @@
-package io.github.gufeczek.crochetcompanion.feature.counter
+package io.github.gufeczek.crochet.feature.counter
 
 import io.github.gufeczek.feature.counter.CounterCommander
 import io.github.gufeczek.feature.counter.CounterDataSource

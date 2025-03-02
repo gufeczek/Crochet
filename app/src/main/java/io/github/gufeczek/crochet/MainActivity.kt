@@ -1,4 +1,4 @@
-package io.github.gufeczek.crochetcompanion
+package io.github.gufeczek.crochet
 
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -7,10 +7,9 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import io.github.gufeczek.crochetcompanion.ui.CrochetApp
-import io.github.gufeczek.crochetcompanion.ui.rememberCrochetAppState
-import io.github.gufeczek.crochetcompanion.ui.theme.CrochetCompanionTheme
-import org.koin.android.ext.android.inject
+import io.github.gufeczek.crochet.ui.CrochetApp
+import io.github.gufeczek.crochet.ui.rememberCrochetAppState
+import io.github.gufeczek.crochet.ui.theme.CrochetCompanionTheme
 
 const val PERMISSIONS_REQUEST_RECORD_AUDIO = 1
 class MainActivity : ComponentActivity() {
