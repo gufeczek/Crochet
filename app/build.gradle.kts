@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
@@ -8,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "io.github.gufeczek.crochetcompanion"
+    namespace = "io.github.gufeczek.crochet"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "io.github.gufeczek.crochetcompanion"
+        applicationId = "io.github.gufeczek.crochet"
         minSdk = 27
         targetSdk = 35
         versionCode = 1
