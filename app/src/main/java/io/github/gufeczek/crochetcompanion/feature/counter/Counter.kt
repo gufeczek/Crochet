@@ -3,8 +3,8 @@ package io.github.gufeczek.crochetcompanion.feature.counter
 import io.github.gufeczek.feature.counter.CounterCommander
 import io.github.gufeczek.feature.counter.CounterDataSource
 import io.github.gufeczek.feature.counter.VoiceCommand
-import io.github.gufeczek.core.speech.DefaultVoiceCommandsBroadcast
-import io.github.gufeczek.core.speech.VoiceRecognitionMonitor
+import io.github.gufeczek.crochet.core.speech.DefaultVoiceCommandsBroadcast
+import io.github.gufeczek.crochet.core.speech.VoiceRecognitionMonitor
 import io.github.gufeczek.crochet.data.CounterRepository
 import io.github.gufeczek.crochet.model.SpeechEvent
 import kotlinx.coroutines.flow.Flow
