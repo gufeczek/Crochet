@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.7.3" type="incidents">
+
+    <incident
+        id="ModifierParameter"
+        severity="warning"
+        message="Optional Modifier parameter should have a default value of `Modifier`">
+        <fix-replace
+            description="Change default value to Modifier"
+            robot="true"
+            independent="true"
+            oldString="Modifier.size(50.dp)"
+            replacement="Modifier"
+            priority="0">
+            <range
+                file="${:common:design-system*debug*MAIN*sourceProvider*0*javaDir*0}/io/github/gufeczek/crochet/design/system/Button.kt"
+                startOffset="627"
+                endOffset="668"/>
+        </fix-replace>
+        <location
+            file="${:common:design-system*debug*MAIN*sourceProvider*0*javaDir*0}/io/github/gufeczek/crochet/design/system/Button.kt"
+            line="18"
+            column="5"
+            startOffset="627"
+            endLine="18"
+            endColumn="13"
+            endOffset="635"/>
+    </incident>
+
+</incidents>

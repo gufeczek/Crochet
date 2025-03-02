@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/gufeczek/CrochetCompanion/common/speech-recognition/model/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest18023666756787736503.xml:2:13-83
+INJECTED from /home/gufeczek/CrochetCompanion/common/speech-recognition/model/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest18023666756787736503.xml:2:13-83
+	package
+		INJECTED from /home/gufeczek/CrochetCompanion/common/speech-recognition/model/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest18023666756787736503.xml
+	xmlns:android
+		ADDED from /home/gufeczek/CrochetCompanion/common/speech-recognition/model/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest18023666756787736503.xml:2:23-81
+uses-sdk
+INJECTED from /home/gufeczek/CrochetCompanion/common/speech-recognition/model/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest18023666756787736503.xml reason: use-sdk injection requested
+INJECTED from /home/gufeczek/CrochetCompanion/common/speech-recognition/model/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest18023666756787736503.xml
+INJECTED from /home/gufeczek/CrochetCompanion/common/speech-recognition/model/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest18023666756787736503.xml
+	android:targetSdkVersion
+		INJECTED from /home/gufeczek/CrochetCompanion/common/speech-recognition/model/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest18023666756787736503.xml
+	android:minSdkVersion
+		INJECTED from /home/gufeczek/CrochetCompanion/common/speech-recognition/model/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest18023666756787736503.xml

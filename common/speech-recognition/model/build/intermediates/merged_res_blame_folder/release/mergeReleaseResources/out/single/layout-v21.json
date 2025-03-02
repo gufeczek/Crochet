@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "io.github.gufeczek.common.speech.recognition.model-release-41:/layout-v21/notification_template_custom_big.xml",
+        "source": "io.github.gufeczek.common.speech.recognition.model-core-1.15.0-31:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "io.github.gufeczek.common.speech.recognition.model-release-41:/layout-v21/notification_template_icon_group.xml",
+        "source": "io.github.gufeczek.common.speech.recognition.model-core-1.15.0-31:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "io.github.gufeczek.common.speech.recognition.model-release-41:/layout-v21/notification_action_tombstone.xml",
+        "source": "io.github.gufeczek.common.speech.recognition.model-core-1.15.0-31:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "io.github.gufeczek.common.speech.recognition.model-release-41:/layout-v21/notification_action.xml",
+        "source": "io.github.gufeczek.common.speech.recognition.model-core-1.15.0-31:/layout-v21/notification_action.xml"
+    }
+]

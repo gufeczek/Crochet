@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "io.github.gufeczek.crochet.common.design.system.design-system-mergeReleaseResources-48:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "/home/gufeczek/.gradle/caches/8.12/transforms/d00af21ed077efcddc4064d278f4c113/transformed/material3-release/res/values-v30/values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "io.github.gufeczek.crochet.common.design.system.design-system-release-50:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "/home/gufeczek/.gradle/caches/8.12/transforms/d00af21ed077efcddc4064d278f4c113/transformed/material3-release/res/values-v30/values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}
