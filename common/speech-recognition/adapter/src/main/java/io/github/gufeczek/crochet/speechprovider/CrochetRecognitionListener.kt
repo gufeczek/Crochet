@@ -1,7 +1,7 @@
 package io.github.gufeczek.crochet.speechprovider
 
 import android.content.Context
-import io.github.gufeczek.model.SpeechEvent
+import io.github.gufeczek.crochet.model.SpeechEvent
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow

@@ -12,7 +12,7 @@ import android.os.IBinder
 import android.speech.tts.TextToSpeech
 import androidx.core.content.getSystemService
 import io.github.gufeczek.common.speech.recognition.adapter.R
-import io.github.gufeczek.model.SpeechEvent
+import io.github.gufeczek.crochet.model.SpeechEvent
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.MutableStateFlow

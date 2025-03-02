@@ -6,7 +6,7 @@ import io.github.gufeczek.feature.counter.VoiceCommand
 import io.github.gufeczek.core.speech.DefaultVoiceCommandsBroadcast
 import io.github.gufeczek.core.speech.VoiceRecognitionMonitor
 import io.github.gufeczek.data.CounterRepository
-import io.github.gufeczek.model.SpeechEvent
+import io.github.gufeczek.crochet.model.SpeechEvent
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.mapNotNull
 import org.koin.core.annotation.Single

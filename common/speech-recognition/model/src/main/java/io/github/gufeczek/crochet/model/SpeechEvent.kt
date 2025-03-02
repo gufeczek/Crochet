@@ -1,4 +1,4 @@
-package io.github.gufeczek.model
+package io.github.gufeczek.crochet.model
 
 sealed class SpeechEvent {
     data object Preparing : SpeechEvent()
