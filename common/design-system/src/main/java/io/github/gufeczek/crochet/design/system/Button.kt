@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun Button(
-    modifier: Modifier = Modifier.size(50.dp),
+    modifier: Modifier = Modifier.size(75.dp),
     shape: Shape = CircleShape,
     border: BorderStroke = BorderStroke(1.dp, Color.Blue),
     contentPadding: PaddingValues = PaddingValues(0.dp),

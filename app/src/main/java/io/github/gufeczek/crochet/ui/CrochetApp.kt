@@ -43,7 +43,7 @@ fun CrochetTopAppBar(
                 .fillMaxSize()
                 .padding(padding)
         ) {
-            CenterAlignedTopAppBar(title = { Text("title") })
+            CenterAlignedTopAppBar(title = { Text("Crochet") })
             CrochetNavHost(appState = appState)
         }
     }

@@ -7,6 +7,8 @@ import io.github.gufeczek.feature.counter.CounterDataSource
 import io.github.gufeczek.feature.counter.Effect
 import io.github.gufeczek.feature.counter.FeatureViewModel
 import io.github.gufeczek.feature.counter.ViewState
+import io.github.gufeczek.feature.counter.VoiceCommand
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
@@ -41,6 +43,18 @@ class CounterViewModel(
     private val counterCommander: CounterCommander,
     counterDataSource: CounterDataSource
 ) : FeatureViewModel<CounterViewState, CounterAction, CounterEffect>() {
+
+    init {
+        GlobalScope.launch {
+            counterDataSource.voiceCommands.collect { it: VoiceCommand ->
+                when (it) {
+                    VoiceCommand.Decrement -> reduce(CounterAction.OnMinusClicked)
+                    VoiceCommand.Increment -> reduce(CounterAction.OnPlusClicked)
+                    else -> Unit
+                }
+            }
+        }
+    }
 
     override val viewState: StateFlow<CounterViewState> =
         combine(
