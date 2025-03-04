@@ -14,7 +14,7 @@ interface CounterRepository {
 }
 
 @Single
-class InMemoryCounterRepository : CounterRepository {
+internal class InMemoryCounterRepository : CounterRepository {
     private val _counter: MutableStateFlow<Int> = MutableStateFlow(0)
 
     override suspend fun create() = Unit
