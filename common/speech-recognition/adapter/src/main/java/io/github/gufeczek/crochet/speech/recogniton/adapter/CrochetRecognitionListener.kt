@@ -15,7 +15,7 @@ import org.vosk.android.SpeechService
 import org.vosk.android.StorageService
 import kotlin.coroutines.resume
 
-suspend fun initializeSpeechRecognitionModel(
+internal suspend fun initializeSpeechRecognitionModel(
     context: Context,
     logLevel: LogLevel
 ): Model? {
