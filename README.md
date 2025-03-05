@@ -15,3 +15,5 @@ Typically application-specific, these modules are not easily reusable across oth
 
 Core modules and feature modules are separated by the bridge, the app module.
 The dependencies are "wired" here. Aside from that, this is where most setup takes place.
+
+![bridge.png](docs/assets/bridge.png)
