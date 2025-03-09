@@ -49,5 +49,9 @@ gradlePlugin {
             id = libs.plugins.convention.common.library.get().pluginId
             implementationClass = "CommonLibraryPlugin"
         }
+        register("database") {
+            id = libs.plugins.convention.database.get().pluginId
+            implementationClass = "DatabasePlugin"
+        }
     }
 }
