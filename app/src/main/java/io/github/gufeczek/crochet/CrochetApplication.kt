@@ -1,6 +1,8 @@
 package io.github.gufeczek.crochet
 
 import android.app.Application
+import io.github.gufeczek.crochet.core.database.DatabaseModule
+import io.github.gufeczek.crochet.core.network.NetworkModule
 import io.github.gufeczek.feature.counter.FeatureModule
 import io.github.gufeczek.crochet.core.speech.SpeechModule
 import io.github.gufeczek.crochet.data.DataModule
@@ -23,7 +25,9 @@ class CrochetApplication : Application() {
                 DataModule().module,
                 FeatureModule().module,
                 SpeechModule().module,
-                SpeechRecognitionAdapterModule().module
+                SpeechRecognitionAdapterModule().module,
+                DatabaseModule().module,
+                NetworkModule().module
             )
         }
     }

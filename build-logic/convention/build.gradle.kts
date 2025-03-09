@@ -54,5 +54,9 @@ gradlePlugin {
             id = libs.plugins.convention.database.get().pluginId
             implementationClass = "DatabasePlugin"
         }
+        register("network") {
+            id = libs.plugins.convention.network.get().pluginId
+            implementationClass = "NetworkPlugin"
+        }
     }
 }

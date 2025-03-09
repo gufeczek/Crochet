@@ -85,7 +85,8 @@ dependencies {
     implementation(projects.feature.counter)
     implementation(projects.core.speech)
     implementation(projects.core.data)
+    implementation(projects.core.database)
+    implementation(projects.core.network)
     implementation(projects.common.speechRecognition.adapter)
     implementation(projects.common.speechRecognition.model)
-
 }

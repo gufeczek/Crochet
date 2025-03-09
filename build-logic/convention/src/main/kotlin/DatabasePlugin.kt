@@ -12,7 +12,7 @@ import org.gradle.kotlin.dsl.dependencies
 
 class DatabasePlugin : Plugin<Project> {
     override fun apply(project: Project) = with (project) {
-        apply(plugin = "androidx.room")
+        apply(plugin = ROOM)
         apply(plugin = KSP)
 
         extensions.configure<KspExtension> {

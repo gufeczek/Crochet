@@ -19,6 +19,7 @@ arrow = "2.0.0"
 startup = "1.2.0"
 vosk = "0.3.47"
 room = "2.6.1"
+ktor= "3.1.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -53,6 +54,9 @@ vosk = { group = "com.alphacephei", name = "vosk-android", version.ref = "vosk" 
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
 
 android-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
@@ -74,4 +78,4 @@ convention-core-library = { id = "crochet.convention.core.library" }
 convention-compose-library = { id = "crochet.convention.compose.library" }
 convention-common-library = { id = "crochet.convention.common.library" }
 convention-database = { id = "crochet.convention.database" }
-
+convention-network = { id = "crochet.convention.network" }
