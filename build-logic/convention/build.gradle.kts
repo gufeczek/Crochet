@@ -22,6 +22,7 @@ dependencies {
     compileOnly(libs.kotlin.gradle.plugin)
     compileOnly(libs.compose.gradle.plugin)
     compileOnly(libs.ksp.gradle.plugin)
+    compileOnly(libs.room.gradle.plugin)
 }
 
 tasks {

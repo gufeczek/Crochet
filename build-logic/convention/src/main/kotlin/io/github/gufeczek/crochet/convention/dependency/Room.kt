@@ -8,4 +8,6 @@ internal fun DependencyHandler.configureRoom(
     project: Project
 ) = with (project) {
     add("implementation", findLibrary("room-runtime"))
-    add("ksp", findLibrary("room-compiler"))}
+    add("implementation", findLibrary("room-ktx"))
+    add("ksp", findLibrary("room-compiler"))
+}
