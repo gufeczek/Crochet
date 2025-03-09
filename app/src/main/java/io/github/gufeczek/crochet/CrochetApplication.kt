@@ -4,7 +4,7 @@ import android.app.Application
 import io.github.gufeczek.feature.counter.FeatureModule
 import io.github.gufeczek.crochet.core.speech.SpeechModule
 import io.github.gufeczek.crochet.data.DataModule
-import io.github.gufeczek.crochet.speech.recogniton.adapter.SpeechProviderModule
+import io.github.gufeczek.crochet.speech.recogniton.adapter.SpeechRecognitionAdapterModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -23,7 +23,7 @@ class CrochetApplication : Application() {
                 DataModule().module,
                 FeatureModule().module,
                 SpeechModule().module,
-                SpeechProviderModule().module
+                SpeechRecognitionAdapterModule().module
             )
         }
     }
