@@ -16,14 +16,14 @@ import org.koin.core.annotation.Single
 
 @Single
 class SpeechAdapter(private val appContext: Context) {
-    private var boundService: SpeechProviderService? = null
+    private var boundService: SpeechAdapterService? = null
     private val _speechEvents = MutableStateFlow<SpeechEvent>(value = SpeechEvent.Finished)
     val speechEvents: Flow<SpeechEvent> = _speechEvents.asStateFlow()
 
     fun initialize(): Boolean {
         val connection = object : ServiceConnection {
             override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
-                val binder = service as SpeechProviderService.SpeechProviderBinder
+                val binder = service as SpeechAdapterService.SpeechProviderBinder
                 boundService = binder.service
                 GlobalScope.launch {
                     boundService?.speech?.collect(_speechEvents::emit)
@@ -39,13 +39,13 @@ class SpeechAdapter(private val appContext: Context) {
             }
         }
 
-        val serviceIntent = Intent(appContext, SpeechProviderService::class.java)
+        val serviceIntent = Intent(appContext, SpeechAdapterService::class.java)
         ContextCompat.startForegroundService(appContext, serviceIntent)
         return appContext.bindService(serviceIntent, connection, Context.BIND_AUTO_CREATE)
     }
 
     fun stop(): Boolean {
-        val isServiceStopped = appContext.stopService(Intent(appContext, SpeechProviderService::class.java))
+        val isServiceStopped = appContext.stopService(Intent(appContext, SpeechAdapterService::class.java))
         GlobalScope.launch {
             if (isServiceStopped) {
                 _speechEvents.emit(SpeechEvent.Finished)

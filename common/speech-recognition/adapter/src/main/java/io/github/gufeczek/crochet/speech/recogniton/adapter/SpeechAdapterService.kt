@@ -23,7 +23,7 @@ import org.vosk.LogLevel
 private const val NOTIFICATION_ID = 1
 private const val CHANNEL_ID = "SpeechProvider"
 
-internal class SpeechProviderService: Service(), TextToSpeech.OnInitListener {
+internal class SpeechAdapterService: Service(), TextToSpeech.OnInitListener {
     private val binder = SpeechProviderBinder()
     private lateinit var textToSpeech: TextToSpeech
     private val _speechEvents: MutableStateFlow<SpeechEvent> = MutableStateFlow(SpeechEvent.Preparing)
@@ -33,7 +33,7 @@ internal class SpeechProviderService: Service(), TextToSpeech.OnInitListener {
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         startForeground(NOTIFICATION_ID, createNotification())
-        textToSpeech = TextToSpeech(this@SpeechProviderService,  this@SpeechProviderService)
+        textToSpeech = TextToSpeech(this@SpeechAdapterService,  this@SpeechAdapterService)
 
         val appOps = getSystemService(Context.APP_OPS_SERVICE) as AppOpsManager
         val mode = appOps.checkOpNoThrow(
@@ -46,7 +46,7 @@ internal class SpeechProviderService: Service(), TextToSpeech.OnInitListener {
         }
 
         GlobalScope.launch(Dispatchers.Default) {
-            val model = initializeSpeechRecognitionModel(this@SpeechProviderService, LogLevel.DEBUG)
+            val model = initializeSpeechRecognitionModel(this@SpeechAdapterService, LogLevel.DEBUG)
             launch(Dispatchers.Main) {
                 initRecognitionListener(model!!).flowOn(Dispatchers.IO).collect(_speechEvents::emit)
             }
@@ -79,7 +79,7 @@ internal class SpeechProviderService: Service(), TextToSpeech.OnInitListener {
     }
 
     inner class SpeechProviderBinder : Binder() {
-        val service: SpeechProviderService
-            get() = this@SpeechProviderService
+        val service: SpeechAdapterService
+            get() = this@SpeechAdapterService
     }
 }
