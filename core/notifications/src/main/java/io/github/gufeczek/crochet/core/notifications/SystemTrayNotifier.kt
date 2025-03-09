@@ -1,4 +1,4 @@
-package io.github.gufeczek.crochet.notifications
+package io.github.gufeczek.crochet.core.notifications
 
 import android.Manifest.permission
 import android.app.Notification
@@ -11,7 +11,6 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 
 private const val NOTIFICATION_CHANNEL_ID = "default"
-
 
 class SystemTrayNotifier(
     private val context: Context

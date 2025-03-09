@@ -1,4 +1,4 @@
-package io.github.gufeczek.crochet.notifications
+package io.github.gufeczek.crochet.core.notifications
 
 import androidx.compose.runtime.Composable
 
